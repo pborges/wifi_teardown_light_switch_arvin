@@ -12,7 +12,7 @@
 char host[11];
 WiFiManager wiFiManager;
 ESP8266WebServer server(80);
-Button button = Button(BUTTON, INPUT_PULLUP, true, true);
+Button button = Button(BUTTON, 25, true, true);
 
 void setupOTA() {
     ArduinoOTA.setHostname(host);
